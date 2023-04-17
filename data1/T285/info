@@ -1,0 +1,86 @@
+{
+    "@type": "neuroglancer_annotations_v1",
+    "annotation_type": "POINT",
+    "dimensions": {
+        "x": [
+            500,
+            "nm"
+        ],
+        "y": [
+            500,
+            "nm"
+        ],
+        "z": [
+            500,
+            "nm"
+        ]
+    },
+    "by_id": {
+        "key": "by_id"
+    },
+    "lower_bound": [
+        11406.501931821716,
+        2580.6646786025885,
+        8199.0
+    ],
+    "upper_bound": [
+        19531.200806507,
+        13077.821084003715,
+        8201.0
+    ],
+    "properties": [
+        {
+            "id": "cell_type",
+            "type": "uint16",
+            "description": "cell type",
+            "enum_values": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16
+            ],
+            "enum_labels": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16"
+            ]
+        },
+        {
+            "id": "cell_color",
+            "type": "rgb",
+            "description": "cell color"
+        }
+    ],
+    "relationships": [
+        {
+            "id": "bin_type",
+            "key": "cell_type"
+        }
+    ],
+    "spatial": []
+}

@@ -1,0 +1,43 @@
+{
+  "dimensions": {
+    "x": [
+      7e-7,
+      "m"
+    ],
+    "y": [
+      7e-7,
+      "m"
+    ],
+    "z": [
+      7e-7,
+      "m"
+    ]
+  },
+  "position": [
+    7090.25390625,
+    10828.3154296875,
+    0.5
+  ],
+  "crossSectionScale": 0.042320758768663445,
+  "projectionScale": 1024,
+  "layers": [
+    {
+      "type": "segmentation",
+      "source": [
+        "precomputed://https://uat.stomics.tech/ngdataserver/SS200000135TL_D1/default/segmentation/cellbin",
+        "precomputed://https://uat.stomics.tech/ngdataserver/SS200000135TL_D1/default/segmentation/cellbin/labels"
+      ],
+      "tab": "segments",
+      "name": "SS200000135TL_D1_seg"
+    },
+    {
+      "type": "annotation",
+      "source": "precomputed://https://uat.stomics.tech/ngdataserver/SS200000135TL_D1/default/annotation/cellbin/bin1",
+      "tab": "rendering",
+      "shader": "\nvoid main() {\n  setColor(defaultColor());\n  setPointMarkerFactor(1.5*sqrt(float(prop_area())/3.14159));\n  setPointMarkerOpacityFactor(0.);\n}\n",
+      "name": "SS200000135TL_D1_anno"
+    }
+  ],
+  "showScaleBar": false,
+  "layout": "xy"
+}
